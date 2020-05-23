@@ -11,8 +11,7 @@ Adds custom jack o'lanterns that turn off when a redstone signal is applied to t
 ![pumpkin lamp and lore](https://i.imgur.com/iJzSAoC.png)
 
 ## Redstone Interaction
-![redstone off lamp on](https://i.imgur.com/4WUKefK.png)
-![redstone on lamp off](https://i.imgur.com/VKDl8DT.png)
+![redstone interaction](https://i.imgur.com/Vi2g3pW.gif)
 
 ## Custom left click effect
 ![left click smoke](https://i.imgur.com/hrN88fa.gif)
