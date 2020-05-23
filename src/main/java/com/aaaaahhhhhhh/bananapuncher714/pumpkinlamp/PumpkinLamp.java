@@ -51,7 +51,7 @@ public class PumpkinLamp extends JavaPlugin implements Listener {
 				BlockFace face = directional.getFacing();
 
 				DBlockData dData = PUMPKIN_LANTERN.getDefaultBlockData();
-				dData.set( BananaBlockPumpkinLamp.FACE, CardinalDirection.valueOf( face.name() ) );
+				dData.set( BananaBlockPumpkinLamp.FACE, face );
 				dData.set( BananaBlockPumpkinLamp.LIT, block.getBlockPower() == 0 );
 				DimensionalBlocks.setDBlockDataAt( dData, block.getLocation() );
 			}

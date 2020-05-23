@@ -16,10 +16,12 @@ import com.aaaaahhhhhhh.bananapuncher714.dimensional.block.library.api.DBlock;
 import com.aaaaahhhhhhh.bananapuncher714.dimensional.block.library.api.DBlockData;
 import com.aaaaahhhhhhh.bananapuncher714.dimensional.block.library.api.DInfo;
 import com.aaaaahhhhhhh.bananapuncher714.dimensional.block.library.api.DState;
+import com.aaaaahhhhhhh.bananapuncher714.dimensional.block.library.api.states.DStateBoolean;
+import com.aaaaahhhhhhh.bananapuncher714.dimensional.block.library.api.states.DStateEnum;
 
 public class BananaBlockPumpkinLamp extends DBlock {
-	protected static final BananaStateBoolean LIT = new BananaStateBoolean( "lit" );
-	protected static final BananaStateFace FACE = new BananaStateFace( "facing" );
+	protected static final DStateBoolean LIT = DStateBoolean.of( "lit" );
+	protected static final DStateEnum< BlockFace > FACE = DStateEnum.of( "facing", BlockFace.class, BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST );
 	
 	public BananaBlockPumpkinLamp() {
 		super( new DInfo( NamespacedKey.minecraft( "pumpkin_lamp" ), Material.JACK_O_LANTERN.createBlockData() )
